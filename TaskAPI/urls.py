@@ -22,13 +22,13 @@ from django.conf import settings
 from TaskApp import views
 
 #Define API Routers
-#router = routers.DefaultRouter()
-router = routers.SimpleRouter()
+router = routers.DefaultRouter()
+#router = routers.SimpleRouter()
 
 
 router.register(r'task',views.TaskViewSet)
-router.register(r'due_task',views.DueTaskViewSet)
-router.register(r'completed_task',views.CompletedTaskViewSet)
+#router.register(r'due_task',views.DueTaskViewSet)
+#router.register(r'completed_task',views.CompletedTaskViewSet)
 
 
 urlpatterns = [
