@@ -6,6 +6,8 @@ class Task(models.Model):
     task_desc = models.TextField(max_length=200)
     completed = models.BooleanField(default=False)
     date_created = models.DateTimeField(auto_now=True)
+    image = models.ImageField(upload_to='Images/',default='Images/None/No-img.jpg')
+    file = models.FileField(upload_to='Doc/',default='Doc/None/No-doc.pdf')
 
 
     def __str__(self):
