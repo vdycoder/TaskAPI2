@@ -26,7 +26,7 @@ router = routers.DefaultRouter()
 #router = routers.SimpleRouter()
 
 
-router.register(r'task',views.TaskViewSet)
+router.register(r'task', views.TaskViewSet)
 #router.register(r'due_task',views.DueTaskViewSet)
 #router.register(r'completed_task',views.CompletedTaskViewSet)
 
@@ -34,4 +34,4 @@ router.register(r'task',views.TaskViewSet)
 urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^admin/', include(admin.site.urls)),
-]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
